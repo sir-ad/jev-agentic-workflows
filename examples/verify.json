@@ -1,0 +1,20 @@
+{
+  "mode": "verify",
+  "goal": "Choose the category supported by the description.",
+  "evidence": "A ceramic cup with a handle for drinking tea. It has no insulation or lid.",
+  "evidenceVersion": "public-demo-1",
+  "candidates": [
+    {
+      "id": "drinkware",
+      "description": "Cups and mugs for drinking beverages."
+    },
+    {
+      "id": "insulated_carriers",
+      "description": "Insulated containers for transporting food or drinks."
+    }
+  ],
+  "public": true,
+  "sanitized": true,
+  "coverageChecked": true,
+  "selectedId": "drinkware"
+}

@@ -1,0 +1,6 @@
+interface:
+  display_name: "Jev Agentic Workflows"
+  short_description: "Typed decisions, evidence checks and bounded reconsideration"
+  default_prompt: "Use $jev-agentic-workflows for narrow typed judgments while retaining source checks, alternatives and bounded reconsideration."
+policy:
+  allow_implicit_invocation: true

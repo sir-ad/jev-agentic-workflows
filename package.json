@@ -1,0 +1,33 @@
+{
+  "name": "jev-agentic-workflows",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Bounded TypeSafe Jev selection and verification for agent workflows.",
+  "type": "module",
+  "license": "MIT",
+  "engines": {
+    "node": ">=22"
+  },
+  "exports": {
+    ".": "./scripts/judge.mjs"
+  },
+  "scripts": {
+    "test": "node --test scripts/judge.test.mjs scripts/cli.test.mjs",
+    "check": "node --check scripts/judge.mjs && node --check scripts/typesafe.mjs"
+  },
+  "files": [
+    "SKILL.md",
+    "agents/",
+    "references/",
+    "scripts/judge.mjs",
+    "scripts/typesafe.mjs",
+    "examples/",
+    "README.md",
+    "LICENSE",
+    "SECURITY.md"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sir-ad/jev-agentic-workflows.git"
+  }
+}
