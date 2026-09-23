@@ -22,7 +22,7 @@ Requires Git and Node.js 22 or newer. Use a [supported Node.js LTS release](http
 
 ```sh
 mkdir -p "${CODEX_HOME:-$HOME/.codex}/skills"
-git clone --branch v1.0.0 --depth 1 \
+git clone --branch v1.1.0 --depth 1 \
   https://github.com/sir-ad/jev-agentic-workflows.git \
   "${CODEX_HOME:-$HOME/.codex}/skills/jev-agentic-workflows"
 ```

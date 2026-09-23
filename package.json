@@ -1,6 +1,6 @@
 {
   "name": "jev-agentic-workflows",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "private": true,
   "description": "Bounded TypeSafe Jev selection and verification for agent workflows.",
   "type": "module",

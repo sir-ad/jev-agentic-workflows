@@ -10,6 +10,16 @@ and execution. Use Jev for a narrow semantic judgment when exact code or a direc
 lookup cannot resolve it. This skill includes a runnable select/verify helper.
 It does not dispatch workers or perform external actions.
 
+When `codex-task-router` is installed, it is the single entry point for an
+ambiguous task-level route: model capability, reasoning effort, skill relevance,
+bounded proposed work units, and optionally the browser workflow. Do not repeat
+those same judgments through `judge.mjs`. The coordinator authors the candidate
+work units and dependency edges, preserves every requested deliverable and check,
+then uses Jev only to assess optional units. Jev cannot invent missing tasks or
+remove required work. For a clear task, a private summary, or no meaningful
+candidates, route locally without a Jev call. The selected path is provisional;
+the coordinator executes it, checks tool availability, and records actual results.
+
 ## Choose the appropriate path
 
 | Situation | Approach |
@@ -25,6 +35,9 @@ model catalog. Match capability to task complexity and raise effort after a fail
 check or unresolved ambiguity. Preserve explicit user choices. If a routing skill
 is installed, it can own this decision; no separate routing skill is required.
 This helper cannot dispatch workers or change the primary model or thinking effort.
+It cannot switch the active parent task model or configure a browser. A router may
+recommend settings for a future supported worker dispatch, and may select an
+available browser path; the active tool and privacy policy still govern execution.
 
 ## Execute a bounded work item
 

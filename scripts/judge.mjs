@@ -2,7 +2,7 @@ import {createHash} from 'node:crypto';
 import {pathToFileURL} from 'node:url';
 import {evaluate, runtimeApiKey} from './typesafe.mjs';
 
-export const VERSION = '1.0.0';
+export const VERSION = '1.1.0';
 const allowed = new Set(['mode','goal','evidence','evidenceVersion','candidates','selectedId',
   'coverageChecked','public','sanitized','timeoutMs','highConsequence']);
 const idPattern = /^[a-z][a-z0-9_-]{0,63}$/;
